@@ -1,5 +1,5 @@
 #### Se instalaran programas automaticamente
-pacman -Sy
+pacman -Syu
 pacman -S --needed --noconfirm htop
 pacman -S --needed --noconfirm vim
 pacman -S --needed --noconfirm smplayer
