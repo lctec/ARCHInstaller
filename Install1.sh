@@ -1,6 +1,7 @@
 #### Se instalaran programas automaticamente
 pacman -Sy
 pacman -S --needed --noconfirm htop
+pacman -S --needed --noconfirm vim
 pacman -S --needed --noconfirm smplayer
 pacman -S --needed --noconfirm base-devel
 pacman -S --needed --noconfirm qbittorrent
