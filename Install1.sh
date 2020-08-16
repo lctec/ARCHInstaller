@@ -13,9 +13,13 @@ pacman -S --needed --noconfirm remmina
 pacman -S --needed --noconfirm openshot
 pacman -S --needed --noconfirm neofetch
 pacman -S --needed --noconfirm bleachbit
-
+pacman -S --needed --noconfirm guake
+pacman -S --needed --noconfirm
 
 #### Se instalaran programas automaticamente  desde AUR
 pamac build gotop --no-confirm
 pamac build google.chrome --no-confirm
 pamac build google-drive-ocamlfuse --no-confirm
+pamac build youtube-dl-gui-git --no-confirm
+
+pamac build  --no-confirm
