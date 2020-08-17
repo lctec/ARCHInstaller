@@ -17,6 +17,7 @@ pacman -S --needed --noconfirm guake
 pacman -S --needed --noconfirm
 
 #### Se instalaran programas automaticamente  desde AUR
+pamac build timeshift --no-confirm
 pamac build gotop --no-confirm
 pamac build google-chrome --no-confirm
 pamac build google-drive-ocamlfuse --no-confirm
