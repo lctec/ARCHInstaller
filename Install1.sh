@@ -18,7 +18,7 @@ pacman -S --needed --noconfirm
 
 #### Se instalaran programas automaticamente  desde AUR
 pamac build gotop --no-confirm
-pamac build google.chrome --no-confirm
+pamac build google-chrome --no-confirm
 pamac build google-drive-ocamlfuse --no-confirm
 pamac build youtube-dl-gui-git --no-confirm
 pamac build github-desktop --no-confirm
