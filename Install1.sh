@@ -1,6 +1,7 @@
 #### Se instalaran programas automaticamente
 pacman -Syu --noconfirm
 pacman -S --needed --noconfirm htop
+pacman -S --needed --noconfirm cron
 pacman -S --needed --noconfirm vim
 pacman -S --needed --noconfirm smplayer
 pacman -S --needed --noconfirm base-devel
@@ -20,8 +21,8 @@ pacman -S --needed --noconfirm
 yay -S timeshift --no-confirm
 yay -S gotop --no-confirm
 yay -S google-chrome --no-confirm
-yay -S build google-drive-ocamlfuse --no-confirm
+##yay -S build google-drive-ocamlfuse --no-confirm
 yay -S build youtube-dl-gui-git --no-confirm
-yay -S build github-desktop --no-confirm
+##yay -S build github-desktop --no-confirm
 yay -S stremio --no-confirm
 yay -S --no-confirm
