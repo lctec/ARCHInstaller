@@ -1,32 +1,6 @@
 #!/bin/bash
 
 #----------------------------------------------------------SELECT/CREATE USER {{{
-select_user(){
-  #CREATE NEW USER {{{
-  create_new_user(){
-    printf "%s" "Username: "
-    read -r username
-    username=$(echo "$username" | tr '[:upper:]' '[:lower:]')
-    useradd -m -g users -G wheel -s /bin/bash "${username}"
-    chfn "${username}"
-    passwd "${username}"
-    while [[ $? -ne 0 ]]; do
-      passwd "${username}"
-    done
-    pause_function
-    configure_user_account
-  }
-  #}}}
-  #--------------------------------------------------------CONFIGURE USER ACCOUNT {{{
-  configure_user_account(){
-    #BASHRC {{{
-          package_install "git"
-          package_install "colordiff"
-          git clone https://github.com/helmuthdu/dotfiles
-          cp dotfiles/.bashrc dotfiles/.dircolors dotfiles/.dircolors_256 dotfiles/.nanorc dotfiles/.yaourtrc ~/
-          cp dotfiles/.bashrc dotfiles/.dircolors dotfiles/.dircolors_256 dotfiles/.nanorc dotfiles/.yaourtrc /home/"${username}"/
-          rm -fr dotfiles
-    #}}}
     #------------------------------------------------------EDITOR {{{
     print_title "DEFAULT EDITOR"
     
