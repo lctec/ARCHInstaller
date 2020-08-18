@@ -1,4 +1,4 @@
-VIDEO CARDS {{{
+#VIDEO CARDS {{{
 create_ramdisk_environment(){
   if [ "$(ls /boot | grep hardened -c)" -gt "0" ]; then
     mkinitcpio -p linux-hardened
