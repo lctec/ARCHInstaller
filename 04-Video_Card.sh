@@ -1,15 +1,4 @@
 #VIDEO CARDS {{{
-create_ramdisk_environment(){
-  if [ "$(ls /boot | grep hardened -c)" -gt "0" ]; then
-    mkinitcpio -p linux-hardened
-  elif [ "$(ls /boot | grep lts -c)" -gt "0" ]; then
-    mkinitcpio -p linux-lts
-  elif [ "$(ls /boot | grep zen -c)" -gt "0" ]; then
-    mkinitcpio -p linux-zen
-  else
-    mkinitcpio -p linux
-  fi
-}
 install_video_cards(){
   package_install "dmidecode"
   print_title "VIDEO CARD"
