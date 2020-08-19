@@ -1,4 +1,11 @@
 #!/bin/bash
+if [[ -f $(pwd)/sharedfuncs ]]; then
+  source sharedfuncs
+else
+  echo "missing file: sharedfuncs"
+  exit 1
+fi
+
 #VIDEO CARDS {{{
 install_video_cards(){
   package_install "dmidecode"
