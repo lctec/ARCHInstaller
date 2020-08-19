@@ -3,4 +3,5 @@
 bash 03-xorg.sh
 
 ####### Extra Install
+mkinitcpio -p linux
  pacman -S --needed --noconfirm  htop
