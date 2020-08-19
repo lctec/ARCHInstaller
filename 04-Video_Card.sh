@@ -1,3 +1,4 @@
+#!/bin/bash
 #VIDEO CARDS {{{
 install_video_cards(){
   package_install "dmidecode"
